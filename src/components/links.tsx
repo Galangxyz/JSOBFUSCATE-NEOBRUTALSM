@@ -42,7 +42,7 @@ export default function Links() {
         )
       })}
       {/* Footer Text with Transparent Background and Black Text */}
-      <footer className="w-full bg-transparent text-black py-4 mt-6">
+      <footer className="w-full bg-transparent text-black dark:text-white py-4 mt-6">
         <div className="container mx-auto text-center">
           <p className="mb-2 mt-0.5 text-sm">
             &copy; {new Date().getFullYear()} Langz Panel. All rights reserved.
