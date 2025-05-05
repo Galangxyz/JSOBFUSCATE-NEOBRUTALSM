@@ -1,62 +1,64 @@
-<img src="public/preview.png" />
+## Cara Instalasi
 
-# Portfolio
+1. Clone atau buat repository baru dari template ini:
 
-Portfolio is a neobrutalism-styled nextjs tailwind template for portfolios.
+   [**Generate repository baru**](https://github.com/Galangxyz/JSOBFUSCATE-NEOBRUTALSM.git)
 
-## Get started
+2. Install dependency:
 
-[Create a new repo](https://github.com/neobrutalism-templates/portfolio/generate) from this template.
+   ```bash
+   pnpm i
 
-### Installation
-
-This template uses `pnpm` package manager so make sure you have it installed.
-
-To install all dependencies run:
-
-```bash
-pnpm i
-```
-
-To run the app locally:
+3. Jalankan lokal:
 
 ```bash
 pnpm run dev
 ```
 
-### Config
+## Konfigurasi Awal
 
-- Inside `layout.tsx` update the metadata
-- Inside `page.tsx` update the content
-- Update the `favicon.ico`
+Metadata → Edit di src/app/layout.tsx (judul website, favicon, dll.)
 
-### Content config
+Contoh:
 
-#### Links on the home page
+export const metadata: Metadata = {
+  title: 'John Doe',
+  icons: {
+    icon: '/favicon.ico',
+  },
+}
 
-To update the links on the home page go to `src/components/links.tsx` and inside `links` array add or remove objects. Each object has 2 properties, `icon`, and `href`. `href` is self-explanatory, and inside `icon` you'll put an icon imported from `@icons-pack/react-simple-icons`. Visit [simpleicons.org](https://simpleicons.org/) to see all the icons. Import them by adding `Si` prefix to their name as I imported them in `links` component.
+Konten utama → Edit di src/app/page.tsx
 
-#### Updating the rest of the content
+Favicon → Letakkan file seperti favicon.ico di folder public, otomatis terbaca di metadata.
 
-Inside `data` folder you have the rest of the content you can edit.
 
-#### Updating the `previewImage` in `projects.ts`
+### Styling & Kustomisasi
 
-Make sure to put `/` + name of the picture that's inside public folder. e.g. you have a `my-project.png` picture inside `public` folder, you'll type:
+#### Untuk mengubah tampilan:
 
-```ts
-previewImage: '/my-project.png'
-```
+### Baca dokumentasi styling
 
-##### Image aspect ratio
+### Salin pengaturan ke file CSS proyek (globals.css)
 
-Inside `app/work/page.tsx` `previewImage` is wrapped inside AspectRatio component. Change the `ratio` prop so it suits your needs (default preview images are 710 x 260, so I set the ratio to be `71 / 26`).
+### Sesuaikan tema di ThemeProvider sesuai kebutuhan.
 
-#### Updating skills
 
-I need to clarify how to edit skills since it looks confusing at first. Inside the `skills.ts` inside the `SKILLS` array, each object in the array is a field of skills (can be anything: frontend, backend, devops, design etc). Each object has a `field` prop which is the field name. Also, each object has a `skills` array where each array member has a `skill` value (used as tooltip value), and `icon` is the icon that will be displayed.
-You update them the same way you'd update links on the home page.
+## Catatan Tambahan
 
-### Styling
+1. Template ini cocok bagi yang ingin belajar:
 
-To change the styling visit [styling docs](https://neobrutalism.dev/styling), and copy the desired styling to your css like it's shown in the styling docs.
+2. Struktur Next.js modern
+
+3. Penggunaan Tailwind CSS dalam Next.js
+
+4. Implementasi dark mode
+
+5. Pemanfaatan TypeScript
+
+
+## Credits
+
+Template dibuat oleh tim neobrutalism-templates.
+
+©Galangxyz
