@@ -1,6 +1,6 @@
-<img src="public/preview.png" />
+<img src="https://files.catbox.moe/f8gmdf.jpg" />
 
-# Portfolio
+# Template Neobrutalism
 
 Portfolio adalah template Next.js + Tailwind dengan gaya **neobrutalism** yang cocok untuk membuat website portofolio.
 
